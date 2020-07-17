@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SkeletonElement from '../skeletons/SkeletonElement';
 
 export default function Articles() {
   const [articles, setArticles] = useState(null)
