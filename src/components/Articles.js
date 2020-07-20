@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import SkeletonElement from '../skeletons/SkeletonElement';
+import SkeletonArticle from '../skeletons/SkeletonArticle';
 
 export default function Articles() {
   const [articles, setArticles] = useState(null)
@@ -23,7 +23,7 @@ export default function Articles() {
         </div>
       ))}
 
-      {!articles && <div>Loading ...</div>}
+      {!articles && [1,2,3,4,5].map(n => <SkeletonArticle key={n} />)}
     </div>
   )
 }
